@@ -5,23 +5,19 @@ import org.example.enumGlobal.WeaponType;
 import org.example.pojo.Character;
 import org.example.pojo.Weapon;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args )
     {
-        List<Weapon> inventory = new ArrayList<Weapon>();
+        System.out.println("Create your champion !");
+        List<Weapon> allyInventory = new ArrayList<Weapon>();
 
         Weapon allyWeapon = createWeapon();
-        inventory.add(allyWeapon);
+        allyInventory.add(allyWeapon);
 
 
-        Character allyChampion = createCharacter(inventory);
+        Character allyChampion = createCharacter(allyInventory);
 
-        System.out.println(allyChampion);
     }
 
     public static Weapon createWeapon(){
@@ -34,13 +30,16 @@ public class App
             weaponTypeString = getSaisie("Entrez Le type d'arme que vous souhaitez : (entrez 't' pour voir les différants choix)");
         }
 
+        Weapon weaponToReturn;
         try {
-            return new Weapon(weaponName, weaponPower, turnIntoType(weaponTypeString));
+            weaponToReturn = new Weapon(weaponName, weaponPower, turnIntoType(weaponTypeString));
+            System.out.println("\nArme crée : \n" + weaponToReturn + "\n\n");
         }catch (ClassFormatError e){
             System.out.println("Création de l'arme échouée.");
+            weaponToReturn = new Weapon();
         }
 
-        return new Weapon();
+        return weaponToReturn;
     }
 
     public static Character createCharacter(List<Weapon> weaponList){
@@ -48,8 +47,10 @@ public class App
         int characterHealth = changeToInt(getSaisie("Entrez la vie du joueur :"));
         int characterMana = changeToInt(getSaisie("Entrez le mana du joueur :"));
 
+        Character charactertoReturn;
         try {
-            return new Character(characterName, characterHealth, characterMana, weaponList);
+            charactertoReturn = new Character(characterName, characterHealth, characterMana, weaponList);
+            System.out.println(charactertoReturn);
         }catch (ClassFormatError e){
             System.out.println("Création du personnage échouée.");
         }
