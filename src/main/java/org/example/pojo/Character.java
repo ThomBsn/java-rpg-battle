@@ -44,7 +44,7 @@ public class Character {
     @Override
     public String toString() {
         StringBuilder toReturn = new StringBuilder();
-        String presentation = "Je suis " + this.name + "\nJ'ai " + this.pv + " PV" + ", " + this.mana + " mana.\n\nMon inventaire contient : \n";
+        String presentation = "\n\nJe suis " + this.name + "\nJ'ai " + this.pv + " PV" + ", " + this.mana + " mana.\n\nMon inventaire contient : \n";
         toReturn.append(presentation);
         for (Weapon elem : this.inventory){
             toReturn.append(elem.toString());
