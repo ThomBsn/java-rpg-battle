@@ -9,14 +9,23 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println("Create your champion !");
+        System.out.println("Crée ton Champion !");
         List<Weapon> allyInventory = new ArrayList<Weapon>();
 
         Weapon allyWeapon = createWeapon();
         allyInventory.add(allyWeapon);
 
-
         Character allyChampion = createCharacter(allyInventory);
+
+
+        System.out.println("Crée ton Ennemi !");
+        List<Weapon> enemyInventory = new ArrayList<Weapon>();
+
+        Weapon enemyWeapon = createWeapon();
+        allyInventory.add(enemyWeapon);
+
+
+        Character enemyChampion = createCharacter(enemyInventory);
 
     }
 
