@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b7b13b5-dd38-4f4a-a986-0fd150221336" name="Changes" comment="fix : affichage">
+    <list default="true" id="7b7b13b5-dd38-4f4a-a986-0fd150221336" name="Changes" comment="change : create enemi">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pojo/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pojo/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pojo/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pojo/Weapon.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +58,7 @@
       <workItem from="1669047439323" duration="5947000" />
       <workItem from="1669057312152" duration="1804000" />
       <workItem from="1669103906355" duration="2350000" />
-      <workItem from="1669224177755" duration="1168000" />
+      <workItem from="1669224177755" duration="14266000" />
     </task>
     <task id="LOCAL-00001" summary="base : object bases">
       <created>1669051421707</created>
@@ -86,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669105524975</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="change : create enemi">
+      <created>1669228208745</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669228208745</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,6 +117,7 @@
     <MESSAGE value="change : adding entries" />
     <MESSAGE value="change : createCharacter createWeapon" />
     <MESSAGE value="fix : affichage" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix : affichage" />
+    <MESSAGE value="change : create enemi" />
+    <option name="LAST_COMMIT_MESSAGE" value="change : create enemi" />
   </component>
 </project>

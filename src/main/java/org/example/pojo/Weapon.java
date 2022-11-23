@@ -25,15 +25,15 @@ public class Weapon {
 
     //Methods
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public int getPuissance() {
-        return puissance;
+        return this.puissance;
     }
 
     public WeaponType getType() {
-        return type;
+        return this.type;
     }
 
     @Override

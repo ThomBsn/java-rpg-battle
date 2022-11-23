@@ -1,4 +1,6 @@
 package org.example.pojo;
+import org.example.enumGlobal.WeaponType;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,19 +28,19 @@ public class Character {
 
     //Methods
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public int getPv() {
-        return pv;
+        return this.pv;
     }
 
     public int getMana() {
-        return mana;
+        return this.mana;
     }
 
     public List<Weapon> getInventory() {
-        return inventory;
+        return this.inventory;
     }
 
     @Override
@@ -50,5 +52,37 @@ public class Character {
             toReturn.append(elem.toString());
         }
         return toReturn.toString();
+    }
+
+    public void attack(Weapon weapon, Character target){
+        int lostMana = 0;
+        switch(weapon.getType().toString().toLowerCase()){
+            case "baton" :
+                lostMana = 5;
+            case "sword" :
+                lostMana = 20;
+                break;
+            case "dague" :
+                lostMana = 10;
+                break;
+            case "lance" :
+                lostMana = 15;
+                break;
+            case "spectre" :
+                lostMana = 20;
+                break;
+            case "masse" :
+                lostMana = 30;;
+                break;
+        }
+        this.mana -= lostMana;
+
+        System.out.println(this.name + " a perdu : " + lostMana + " mana.");
+        target.takeDamage(weapon.getPuissance());
+    }
+
+    public void takeDamage(int WeaponDmg){
+        System.out.println(this.name + " a perdu : " + WeaponDmg/2 + " PV.");
+        this.pv -= WeaponDmg/2;
     }
 }
