@@ -21,7 +21,7 @@ public class App
         Thread.sleep(4000);
 
         //Création ennemi
-        System.out.println("Crée ton Ennemi !");
+        System.out.println("\n\n\n\n\n\n\nCrée ton Ennemi !");
         List<Weapon> enemyInventory = new ArrayList<Weapon>();
 
         Weapon enemyWeapon = createWeapon();
@@ -34,32 +34,33 @@ public class App
 
         //Combat Start
         int order = 0;
-        System.out.println("LE COMBAT COMMENCE :");
+        System.out.println("\n\n\n\n\n\nLE COMBAT COMMENCE :");
+        Thread.sleep(2000);
         int combatChange = 1;
 
-        while(allyChampion.getPv() > 0 && enemyChampion.getPv() > 0){
+        while(allyChampion.getPv() > 0 && enemyChampion.getPv() > 0 || allyChampion.getMana() < 0 || enemyChampion.getMana() < 0){
             //Ally part
-            System.out.println("\n\nEchange numéro " + combatChange + " :\n");
+            System.out.println("\n\n\n\n\n\nEchange numéro " + combatChange + " :\n");
             combat(order ,allyChampion, enemyChampion);
             order += 1;
             combatChange += 1;
-            System.out.println("\n" + allyChampion.getName() + " possède : " + allyChampion.getPv() + " PV.\n");
-            System.out.println(enemyChampion.getName() + " possède : " + enemyChampion.getPv() + " PV.");
-            Thread.sleep(7000);
+            System.out.println(allyChampion.getName() + " possède : " + allyChampion.getPv() + " PV, " + allyChampion.getMana() + " MANA.");
+            System.out.println(enemyChampion.getName() + " possède : " + enemyChampion.getPv() + " PV." + enemyChampion.getMana() + " MANA.");
+            Thread.sleep(12000);
 
             //Check if one player is dead
-            if(allyChampion.getPv() <= 0 || enemyChampion.getPv() <= 0){
+            if(allyChampion.getPv() <= 0 || enemyChampion.getPv() <= 0 || allyChampion.getMana() <= 0 || enemyChampion.getMana() <= 0){
                 break;
             }
 
             //Enemy Part
-            System.out.println("\n\nEchange numéro " + combatChange + " :\n");
+            System.out.println("\n\n\n\n\nEchange numéro " + combatChange + " :\n");
             combat(order , enemyChampion, allyChampion);
             order -= 1;
             combatChange += 1;
-            System.out.println("\n" + allyChampion.getName() + " possède : " + allyChampion.getPv() + " PV.\n");
-            System.out.println(enemyChampion.getName() + " possède : " + enemyChampion.getPv() + " PV.");
-            Thread.sleep(7000);
+            System.out.println(allyChampion.getName() + " possède : " + allyChampion.getPv() + " PV, " + allyChampion.getMana() + " MANA.");
+            System.out.println(enemyChampion.getName() + " possède : " + enemyChampion.getPv() + " PV." + enemyChampion.getMana() + " MANA.");
+            Thread.sleep(12000);
         }
 
 
@@ -69,7 +70,13 @@ public class App
     }
 
     public static void checkWin(Character ally, Character enemy){
-        if(ally.getPv() > enemy.getPv()){
+        if (ally.getMana() == 0){
+            System.out.println("\n\n\n\n\n" + ally.getName() + " cède la victoire à " + enemy.getName() + ", il n'a plus de force !!!");
+        }
+        else if (enemy.getMana() == 0){
+            System.out.println("\n\n\n\n\n" + enemy.getName() + " cède la victoire à " + ally.getName() + ", il n'a plus de force !!!");
+        }
+        else if(ally.getPv() > enemy.getPv()){
             System.out.println("\n\n\n\n\n" + ally.getName() + " a remporté la victoire !!!");
         }
         else{
@@ -78,7 +85,7 @@ public class App
     }
 
     public static void combat(int order, Character attacking, Character attacked){
-        System.out.println("###################################\n\n");
+        System.out.println("###################################\n");
         if(order == 0) {
             System.out.println("Voici votre inventaire :\n");
             int ctr = 1;
@@ -95,7 +102,7 @@ public class App
             System.out.print(attacking.getName() + " utilisez " + attacking.getInventory().get(rdmNumber).getName() + " :\n");
             attacking.attack(attacking.getInventory().get(rdmNumber), attacked);
         }
-        System.out.println("\n\n###################################\n\n");
+        System.out.println("\n###################################\n");
     }
 
 
@@ -123,7 +130,7 @@ public class App
     }
 
     public static Character createCharacter(List<Weapon> weaponList){
-        String characterName = getSaisie("Entrez le nom du joueur :");
+        String characterName = getSaisie("\n\n\n\n\n\n\n\n\nEntrez le nom du joueur :");
         int characterHealth = changeToInt(getSaisie("Entrez la vie du joueur :"));
         int characterMana = changeToInt(getSaisie("Entrez le mana du joueur :"));
 

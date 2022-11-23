@@ -1,5 +1,4 @@
 package org.example.pojo;
-import org.example.enumGlobal.WeaponType;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -76,6 +75,9 @@ public class Character {
                 break;
         }
         this.mana -= lostMana;
+        if (this.mana < 0){
+            this.mana = 0;
+        }
 
         System.out.println(this.name + " a perdu : " + lostMana + " mana.");
         target.takeDamage(weapon.getPuissance());
@@ -84,5 +86,8 @@ public class Character {
     public void takeDamage(int WeaponDmg){
         System.out.println(this.name + " a perdu : " + WeaponDmg/2 + " PV.");
         this.pv -= WeaponDmg/2;
+        if (this.pv < 0){
+            this.pv = 0;
+        }
     }
 }
