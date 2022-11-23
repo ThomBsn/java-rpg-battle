@@ -15,8 +15,10 @@ public class App
 
         Weapon allyWeapon = createWeapon();
         allyInventory.add(allyWeapon);
+        Thread.sleep(2000);
 
         Character allyChampion = createCharacter(allyInventory);
+        Thread.sleep(4000);
 
         //Création ennemi
         System.out.println("Crée ton Ennemi !");
@@ -24,30 +26,55 @@ public class App
 
         Weapon enemyWeapon = createWeapon();
         enemyInventory.add(enemyWeapon);
+        Thread.sleep(2000);
 
         Character enemyChampion = createCharacter(enemyInventory);
+        Thread.sleep(4000);
 
 
+        //Combat Start
         int order = 0;
-        System.out.println("Voici les coups echangez");
+        System.out.println("LE COMBAT COMMENCE :");
         int combatChange = 1;
-        System.out.println(allyChampion.getPv());
 
         while(allyChampion.getPv() > 0 && enemyChampion.getPv() > 0){
+            //Ally part
             System.out.println("\n\nEchange numéro " + combatChange + " :\n");
             combat(order ,allyChampion, enemyChampion);
             order += 1;
             combatChange += 1;
+            System.out.println("\n" + allyChampion.getName() + " possède : " + allyChampion.getPv() + " PV.\n");
+            System.out.println(enemyChampion.getName() + " possède : " + enemyChampion.getPv() + " PV.");
+            Thread.sleep(7000);
 
-            Thread.sleep(5000);
+            //Check if one player is dead
+            if(allyChampion.getPv() <= 0 || enemyChampion.getPv() <= 0){
+                break;
+            }
+
+            //Enemy Part
             System.out.println("\n\nEchange numéro " + combatChange + " :\n");
             combat(order , enemyChampion, allyChampion);
             order -= 1;
             combatChange += 1;
-
-            Thread.sleep(5000);
+            System.out.println("\n" + allyChampion.getName() + " possède : " + allyChampion.getPv() + " PV.\n");
+            System.out.println(enemyChampion.getName() + " possède : " + enemyChampion.getPv() + " PV.");
+            Thread.sleep(7000);
         }
 
+
+        //Check who win
+        checkWin(allyChampion, enemyChampion);
+
+    }
+
+    public static void checkWin(Character ally, Character enemy){
+        if(ally.getPv() > enemy.getPv()){
+            System.out.println("\n\n\n\n\n" + ally.getName() + "a remporté la victoire !!!");
+        }
+        else{
+            System.out.println("\n\n\n\n\n" + enemy.getName() + "a remporté la victoire !!!");
+        }
     }
 
     public static void combat(int order, Character attacking, Character attacked){
