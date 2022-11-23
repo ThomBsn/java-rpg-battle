@@ -70,10 +70,10 @@ public class App
 
     public static void checkWin(Character ally, Character enemy){
         if(ally.getPv() > enemy.getPv()){
-            System.out.println("\n\n\n\n\n" + ally.getName() + "a remporté la victoire !!!");
+            System.out.println("\n\n\n\n\n" + ally.getName() + " a remporté la victoire !!!");
         }
         else{
-            System.out.println("\n\n\n\n\n" + enemy.getName() + "a remporté la victoire !!!");
+            System.out.println("\n\n\n\n\n" + enemy.getName() + " a remporté la victoire !!!");
         }
     }
 

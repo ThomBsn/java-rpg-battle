@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b7b13b5-dd38-4f4a-a986-0fd150221336" name="Changes" comment="change : combat is op">
+    <list default="true" id="7b7b13b5-dd38-4f4a-a986-0fd150221336" name="Changes" comment="change : final push">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
     </list>
@@ -56,7 +56,7 @@
       <workItem from="1669047439323" duration="5947000" />
       <workItem from="1669057312152" duration="1804000" />
       <workItem from="1669103906355" duration="2350000" />
-      <workItem from="1669224177755" duration="15157000" />
+      <workItem from="1669224177755" duration="15305000" />
     </task>
     <task id="LOCAL-00001" summary="base : object bases">
       <created>1669051421707</created>
@@ -100,7 +100,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669243495694</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="change : final push">
+      <created>1669244375943</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669244375943</updated>
+    </task>
+    <task id="LOCAL-00008" summary="change : final push">
+      <created>1669244387193</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669244387193</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +138,7 @@
     <MESSAGE value="fix : affichage" />
     <MESSAGE value="change : create enemi" />
     <MESSAGE value="change : combat is op" />
-    <option name="LAST_COMMIT_MESSAGE" value="change : combat is op" />
+    <MESSAGE value="change : final push" />
+    <option name="LAST_COMMIT_MESSAGE" value="change : final push" />
   </component>
 </project>
