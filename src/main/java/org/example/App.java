@@ -45,7 +45,7 @@ public class App
             order += 1;
             combatChange += 1;
             System.out.println(allyChampion.getName() + " possède : " + allyChampion.getPv() + " PV, " + allyChampion.getMana() + " MANA.");
-            System.out.println(enemyChampion.getName() + " possède : " + enemyChampion.getPv() + " PV." + enemyChampion.getMana() + " MANA.");
+            System.out.println(enemyChampion.getName() + " possède : " + enemyChampion.getPv() + " PV, " + enemyChampion.getMana() + " MANA.");
             Thread.sleep(12000);
 
             //Check if one player is dead
@@ -59,7 +59,7 @@ public class App
             order -= 1;
             combatChange += 1;
             System.out.println(allyChampion.getName() + " possède : " + allyChampion.getPv() + " PV, " + allyChampion.getMana() + " MANA.");
-            System.out.println(enemyChampion.getName() + " possède : " + enemyChampion.getPv() + " PV." + enemyChampion.getMana() + " MANA.");
+            System.out.println(enemyChampion.getName() + " possède : " + enemyChampion.getPv() + " PV, " + enemyChampion.getMana() + " MANA.");
             Thread.sleep(12000);
         }
 
