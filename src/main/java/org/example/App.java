@@ -113,7 +113,7 @@ public class App
 
         String weaponTypeString = getSaisie("Entrez Le type d'arme que vous souhaitez : (entrez 't' pour voir les différants choix)");
         while(Objects.equals(weaponTypeString, "t")){
-            System.out.println("\nLes choix sont : Lance, Dague, Masse, Sceptre, Baton.");
+            System.out.println("\nLes choix sont : Epée, Lance, Dague, Masse, Sceptre, Baton.");
             weaponTypeString = getSaisie("Entrez Le type d'arme que vous souhaitez : (entrez 't' pour voir les différants choix)");
         }
 

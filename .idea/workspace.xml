@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b7b13b5-dd38-4f4a-a986-0fd150221336" name="Changes" comment="change : adjustments">
+    <list default="true" id="7b7b13b5-dd38-4f4a-a986-0fd150221336" name="Changes" comment="change : adjustments part 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
     </list>
@@ -41,8 +41,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Thomas/OneDrive/etudes_sup/b2/java/java-efficom-main/pokemon-efficom",
-    "nodejs_package_manager_path": "npm"
+    "last_opened_file_path": "C:/Users/ThomasBUSIN/OneDrive/etudes_sup/b2/java/java-rpg-battle",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -56,7 +57,8 @@
       <workItem from="1669047439323" duration="5947000" />
       <workItem from="1669057312152" duration="1804000" />
       <workItem from="1669103906355" duration="2350000" />
-      <workItem from="1669224177755" duration="18364000" />
+      <workItem from="1669224177755" duration="18414000" />
+      <workItem from="1669286270936" duration="853000" />
     </task>
     <task id="LOCAL-00001" summary="base : object bases">
       <created>1669051421707</created>
@@ -128,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669247365483</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="change : adjustments part 2">
+      <created>1669247590592</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1669247590592</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +163,7 @@
     <MESSAGE value="change : combat is op" />
     <MESSAGE value="change : final push" />
     <MESSAGE value="change : adjustments" />
-    <option name="LAST_COMMIT_MESSAGE" value="change : adjustments" />
+    <MESSAGE value="change : adjustments part 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="change : adjustments part 2" />
   </component>
 </project>
